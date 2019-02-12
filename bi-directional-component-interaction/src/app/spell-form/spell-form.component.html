@@ -1,0 +1,25 @@
+<mat-card>
+  <form>
+    <p>Choose Spell:</p>
+    <mat-radio-group [formControl]="spellPicked">
+      <mat-radio-button value="Fire Ball">Fire Ball</mat-radio-button>
+      <mat-radio-button  value="Lightning Bolt">Lightning Bolt</mat-radio-button>
+      <mat-radio-button  value="Heal">Heal</mat-radio-button>
+    </mat-radio-group>
+
+    <p>Hands Free:</p>
+    <mat-radio-group [formControl]="handsFree">
+      <mat-radio-button value="Difficult">None</mat-radio-button>
+      <mat-radio-button  value="Moderate">One Hand</mat-radio-button>
+      <mat-radio-button  value="Easy">Two Hands</mat-radio-button>
+    </mat-radio-group>
+  </form>
+</mat-card>
+
+<app-caster></app-caster>
+
+<mat-card>
+    <mat-list role="list">
+      <mat-list-item *ngFor="let spell of spellList" role="listitem">{{spell}}</mat-list-item>
+    </mat-list>
+</mat-card>

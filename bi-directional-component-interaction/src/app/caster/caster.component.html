@@ -1,0 +1,12 @@
+
+<mat-card>
+  <mat-list role="list">
+    <mat-list-item role="listitem">Casting: {{spell}}</mat-list-item>
+    <mat-list-item role="listitem">Difficulty: {{difficulty}}</mat-list-item>
+  </mat-list>
+  <button (click)="castSpell()" color="primary" mat-flat-button="" class="mat-flat-button mat-primary">
+    <span class="mat-button-wrapper">Cast Spell</span>
+    <div class="mat-button-ripple mat-ripple" matripple=""></div>
+    <div class="mat-button-focus-overlay"></div>
+  </button>
+</mat-card>
