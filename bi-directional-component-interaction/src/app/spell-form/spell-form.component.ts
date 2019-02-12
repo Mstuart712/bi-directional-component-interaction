@@ -36,6 +36,7 @@ export class SpellFormComponent implements OnInit {
     this.handsFree.valueChanges.subscribe( val => {
       this.SpellService.handsPicked(this.handsFree.value);
     });
+    
     this.spellPicked.valueChanges.subscribe( val => {
       this.SpellService.spellPicked(this.spellPicked.value);
     });

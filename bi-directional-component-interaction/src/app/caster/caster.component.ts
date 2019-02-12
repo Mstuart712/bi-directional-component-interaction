@@ -29,7 +29,7 @@ export class CasterComponent implements OnInit {
   }
 
   castSpell() {
-    this.SpellService.spellCast("Mage cast a " + this.difficulty + " " + this.spell);
+    this.SpellService.spellCast("Mage used " + this.difficulty + " " + this.spell);
   }
 
 }
